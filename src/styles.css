@@ -79,15 +79,15 @@ img {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgb(247 248 246 / 0.96) 0%, rgb(247 248 246 / 0.75) 42%, rgb(247 248 246 / 0.96) 100%),
-    radial-gradient(circle at 78% 18%, rgb(255 255 255 / 0.75), transparent 30%);
+    linear-gradient(90deg, rgb(247 248 246 / 0.76) 0%, rgb(247 248 246 / 0.34) 42%, rgb(247 248 246 / 0.68) 100%),
+    radial-gradient(circle at 78% 18%, rgb(255 255 255 / 0.38), transparent 30%);
   pointer-events: none;
 }
 
 .statement-silk-bg {
   position: absolute;
   inset: -20%;
-  opacity: 0.95;
+  opacity: 1;
 }
 
 .hero-runway {

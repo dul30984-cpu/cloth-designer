@@ -35,35 +35,35 @@ const processSteps = [
     number: "01",
     zh: "灵感来源",
     en: "Inspiration",
-    image: "/assets/sections/inspiration.svg",
+    image: "/assets/photos/inspiration.jpg",
     text: "可放情绪板、趋势参考、色卡、生活方式场景、竞品款式和系列关键词。后期你可以直接替换为多张 moodboard 或拼贴图。",
   },
   {
     number: "02",
     zh: "设计手稿",
     en: "Sketch Development",
-    image: "/assets/sections/sketch.svg",
+    image: "/assets/photos/sketch.jpg",
     text: "可放手绘扫描、款式线稿、局部结构推导和系列款式矩阵，用来说明你从灵感到款式的设计判断。",
   },
   {
     number: "03",
     zh: "面料与细节",
     en: "Fabric & Detail",
-    image: "/assets/sections/fabric.svg",
+    image: "/assets/photos/fabric.jpg",
     text: "可放面料实拍、肌理特写、辅料、纽扣、缝线、压褶、洗水效果和工艺细节。",
   },
   {
     number: "04",
     zh: "打版 / 试衣",
     en: "Pattern & Fitting",
-    image: "/assets/sections/process.svg",
+    image: "/assets/photos/process.jpg",
     text: "可放纸样、白坯、试衣过程、版型调整记录，突出你不是只会画图，而是能把系列落地。",
   },
   {
     number: "05",
     zh: "最终大片",
     en: "Final Lookbook",
-    image: "/assets/sections/final.svg",
+    image: "/assets/photos/final.jpg",
     text: "可放模特图、走秀图、棚拍图、街拍感 lookbook，让客户快速感受到完整系列的商业气质。",
   },
 ];
@@ -73,25 +73,25 @@ const profileProof = [
     zh: "工作经历",
     en: "Experience",
     text: "曾参与女装系列企划、款式开发、面料调研、流行趋势整理与成衣落地。这里后期可替换为完整工作履历、品牌经历、岗位职责和代表项目。",
-    image: "/assets/projects/soft-commute/cover.svg",
+    image: "/assets/photos/soft-commute-cover.jpg",
   },
   {
     zh: "参赛 / 获奖",
     en: "Awards",
     text: "可展示设计比赛、院校项目、行业奖项、入围记录或媒体报道。这里预留了较长文字区，也可以放证书扫描图。",
-    image: "/assets/projects/light-structure/cover.svg",
+    image: "/assets/photos/light-structure-cover.jpg",
   },
   {
     zh: "走秀 / 展览",
     en: "Runway & Exhibition",
     text: "可展示秀场、静态展、毕业展、品牌发布会或橱窗陈列照片，强调作品被真实呈现过。",
-    image: "/assets/projects/quiet-resort/cover.svg",
+    image: "/assets/photos/quiet-resort-cover.jpg",
   },
   {
     zh: "商业项目",
     en: "Commercial Projects",
     text: "可展示品牌合作、买手企划、胶囊系列、季度企划案和商品开发案例，方便品牌方判断合作价值。",
-    image: "/assets/projects/urban-ease/cover.svg",
+    image: "/assets/photos/urban-ease-cover.jpg",
   },
 ];
 
@@ -231,7 +231,7 @@ function Hero() {
           className="hero-look"
         >
           <motion.div
-            style={{ ...assetStyle("/assets/projects/soft-commute/hero.svg"), scale: imageScale }}
+            style={{ ...assetStyle("/assets/photos/soft-commute-hero.jpg"), scale: imageScale }}
             className="look-image"
           />
           <motion.div
@@ -260,7 +260,7 @@ function Statement() {
   return (
     <section className="statement-silk-section px-4 py-24 sm:px-6 md:py-32">
       <div className="statement-silk-bg" aria-hidden="true">
-        <Silk speed={9.1} scale={0.9} color="#94a3b8" noiseIntensity={0.9} rotation={0.29} />
+        <Silk speed={9.1} scale={0.9} color="#ffffff" noiseIntensity={0.9} rotation={0.29} />
       </div>
       <FadeIn className="relative z-10 mx-auto max-w-5xl">
         <p className="mb-6 text-sm text-muted">品牌定位 / Design Position</p>
@@ -303,15 +303,15 @@ function TransformationSection() {
         <motion.div style={{ scale: stageScale }} className="transformation-stage">
           <motion.div
             className="transformation-layer"
-            style={{ ...assetStyle("/assets/sections/sketch.svg"), opacity: sketchOpacity }}
+            style={{ ...assetStyle("/assets/photos/sketch.jpg"), opacity: sketchOpacity }}
           />
           <motion.div
             className="transformation-layer"
-            style={{ ...assetStyle("/assets/sections/fabric.svg"), opacity: fabricOpacity }}
+            style={{ ...assetStyle("/assets/photos/fabric.jpg"), opacity: fabricOpacity }}
           />
           <motion.div
             className="transformation-layer"
-            style={{ ...assetStyle("/assets/projects/quiet-resort/hero.svg"), opacity: garmentOpacity }}
+            style={{ ...assetStyle("/assets/photos/quiet-resort-hero.jpg"), opacity: garmentOpacity }}
           />
           <motion.div style={{ x: railX }} className="transformation-film">
             {projects.map((project) => (
